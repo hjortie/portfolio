@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="../../BLUM.svg"
+      sizes="16x16"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elin Hjortskull</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+  <body>
+    <header id="hem">
+      <nav class="burger">
+        <div id="logo-container">
+          <a href="./../../index.html">
+            <img src="../assets/images/logo.png" alt="Elin Hjortskull"
+          /></a>
+        </div>
+      </nav>
+      <input
+        id="dropdown"
+        class="input-box"
+        type="checkbox"
+        style="display: none"
+      />
+      <label for="dropdown" class="dropdown"
+        ><div class="burger-container">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <div class="links">
+          <p><a href="#">Projekt</a></p>
+          <p><a href="./analogue.html">Analogt</a></p>
+          <p><a href="./contact.html">Kontakt</a></p>
+        </div>
+      </label>
+      <nav class="wide-nav">
+        <!-- <h2><a href="../../index.html">Elin Hjortskull</a></h2> -->
+        <div id="logo-container">
+          <a href="./../../index.html">
+            <img src="../assets/images/logo.png" alt="Elin Hjortskull"
+          /></a>
+        </div>
+        <p id="current"><a href="#">Projekt</a></p>
+        <p><a href="./analogue.html">Analogt</a></p>
+        <p><a href="./contact.html">Kontakt</a></p>
+      </nav>
+    </header>
+    <div class="content-wrapper">
+      <section class="content-container">
+        <div class="img-container">
+          <img src="../assets/images/todolist.png" alt="" />
+        </div>
+        <div class="img-container">
+          <img src="../assets/images/konst-i-konsten.png" alt="" />
+        </div>
+        <div class="img-container">
+          <img src="../assets/images/elin-tanker.png" alt="" />
+        </div>
+
+        <div class="img-container">
+          <img src="../assets/images/API-omdb.png" alt="" />
+        </div>
+      </section>
+      <article class="page-text">
+        <span
+          >Ett litet urval av skolarbeten och små sidoprojekt jag pysslat med de
+          senaste månaderna. Jag har jobbat mycket med TypeScript, både backend
+          (API-utveckling) och frontend (dynamisk rendering).
+        </span>
+      </article>
+    </div>
+  </body>
+</html>
