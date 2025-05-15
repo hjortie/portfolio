@@ -302,32 +302,54 @@ h1 {
   }
   .content-wrapper {
     width: 100vw;
+    height: 100vh;
     flex-direction: column;
 
     .content-container {
       display: flex;
-      height: 85vh;
-      margin-left: 20vw;
-      padding-top: 2rem;
       flex-direction: row;
-      gap: 2rem;
+      margin-left: 20vw;
+      height: 90vh;
+      flex-direction: row;
+      gap: 1.5rem;
       align-items: self-start;
       justify-content: flex-start;
       flex-wrap: nowrap;
       overflow-x: scroll;
-      overflow-y: clip;
+      flex: 1;
 
-      .img-container {
+      .project-container {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        flex-wrap: nowrap;
         flex-shrink: 0;
+        max-width: min-content;
 
-        img {
+        .img-container {
+          display: flex;
           border: 10px solid #3b2929;
-          width: 100%;
-          max-height: 65vh;
+          max-height: 63vh;
+          width: 65vw;
+
+          img {
+            height: 100%;
+            width: 100%;
+            flex-shrink: 0;
+          }
+        }
+        .link-container {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+
+          a {
+            display: inline;
+            color: inherit;
+          }
+
+          a:hover {
+            text-decoration: underline 2px dotted;
+          }
         }
       }
     }
@@ -370,13 +392,11 @@ h1 {
   }
 
   .page-text {
-    position: fixed;
-    bottom: 0;
+    justify-self: flex-end;
     margin-left: 20vw;
-    margin-bottom: 0;
     padding: 2vw;
     width: 76vw;
-    max-height: 15vh;
+    height: 10vh;
     overflow-y: scroll;
 
     span {
