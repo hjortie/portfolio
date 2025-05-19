@@ -1,4 +1,5 @@
 import { useState } from "react";
+import blum from "./../../assets/BLUM.svg";
 import "./home.css";
 
 type Flower = {
@@ -30,7 +31,7 @@ export const Home = () => {
           <img
             key={f.id}
             className="flower"
-            src="/BLUM.svg"
+            src={blum}
             style={{
               left: f.x,
               top: f.y,
