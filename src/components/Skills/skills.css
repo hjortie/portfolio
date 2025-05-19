@@ -1,0 +1,55 @@
+main {
+  height: 100vh;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h2 {
+    font-size: 2rem;
+    display: block;
+  }
+
+  .tools-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+
+    .tool-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+
+      a {
+        color: inherit;
+      }
+
+      .logo-container {
+        width: 1.5rem;
+
+        .logo {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  main {
+    margin-left: 25vw;
+    margin-top: 0;
+    /* margin: 0 0 25vw 0; */
+
+    .tools-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      column-gap: 4rem;
+
+      .logo-container {
+        width: 3rem;
+      }
+    }
+  }
+}

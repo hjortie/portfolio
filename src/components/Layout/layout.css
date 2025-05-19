@@ -1,0 +1,154 @@
+header {
+  width: 100vw;
+}
+
+a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline 2px dotted;
+}
+
+.active {
+  text-decoration: underline 2px #ea7ba2;
+}
+
+.burger {
+  display: flex;
+  position: static;
+  flex: row;
+  justify-content: flex-end;
+  background-color: #3b2929;
+  color: #f9f9f9;
+  width: 100vw;
+
+  #logo-container {
+    display: inline-block;
+    width: 30vw;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/*Hamburgaren*/
+.burger-container {
+  position: absolute;
+  top: 2em;
+  left: 2rem;
+  z-index: 5;
+}
+
+input[type="checkbox"] + label .bar1,
+input[type="checkbox"] + label .bar2,
+input[type="checkbox"] + label .bar3 {
+  display: block;
+  background-color: #fff;
+  width: 1.7rem;
+  height: 0.1em;
+  border-radius: 5px;
+  margin: 0.5em 0;
+  transition: all 0.4s;
+  z-index: 5;
+}
+
+.bar2 {
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked + label .bar1 {
+  transform: rotate(45deg);
+  transform-origin: 0% 100%;
+}
+input[type="checkbox"]:checked + label .bar2 {
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label .bar3 {
+  transform: rotate(-45deg);
+  transform-origin: -0% 100%;
+}
+
+input + .dropdown .links {
+  display: none;
+}
+
+#dropdown {
+  display: none;
+}
+
+.links {
+  margin-top: 10%;
+}
+
+input:checked + .burger-container {
+  position: fixed;
+  top: 4em;
+  left: 2rem;
+}
+
+input:checked + .dropdown .links {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+  height: 100vh;
+  width: 40vw;
+  background-color: rgba(59, 41, 41, 0.8);
+  color: #f9f9f9;
+  z-index: 1;
+  animation: slider 0.3s;
+
+  p {
+    padding-left: 1rem;
+  }
+}
+
+@keyframes slider {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+.wide-nav > * {
+  display: none;
+}
+@media (min-width: 480px) {
+  .wide-nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3b2929;
+    color: #f5f5f5;
+    width: 20vw;
+    min-height: 100vh;
+    height: 100%;
+
+    p {
+      display: flex;
+      padding: 0.5rem 1rem;
+      margin: 0;
+      font-size: large;
+      color: #f9f9f9;
+    }
+    #logo-container {
+      display: inline-block;
+      width: 15vw;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .burger,
+  .dropdown,
+  .links,
+  .burger-container {
+    display: none;
+  }
+}

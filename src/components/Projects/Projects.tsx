@@ -1,0 +1,134 @@
+import "./projects.css";
+
+export const Projects = () => {
+  return (
+    <>
+      <div className="content-wrapper">
+        <section className="content-container">
+          <div className="project-container">
+            <div className="img-container">
+              <img
+                src="../images/the-last-todo.png"
+                alt="To-do-app med React"
+              />
+            </div>
+            <p>
+              Mitt första React-projekt med Vite - den senaste tolkningen av
+              många to-do-appar. Använde även TypeScript och Tailwind CSS.
+            </p>
+            <div className="link-container">
+              <a href="https://github.com/hjortie/the-last-todo/">
+                Länk till repo
+              </a>
+              <a href="https://hjortie.github.io/the-last-todo/">
+                Kolla live här!
+              </a>
+            </div>
+          </div>
+
+          <div className="project-container">
+            <div className="img-container">
+              <img
+                src="../images/drink-app.png"
+                alt="API för crud-operationer mot databas"
+              />
+            </div>
+            <p>
+              Ett crud-API byggt med Express och MongoDB. Drinkrecept kan läggas
+              till, redigeras och tas bort direkt från frontend. Filtrering och
+              sortering av drinkrecepten sker på serversidan.
+            </p>
+            <div className="link-container">
+              <a href="https://github.com/hjortie/crud-api">Länk till repo</a>
+            </div>
+          </div>
+          <div className="project-container">
+            <div className="img-container">
+              <img
+                src="../images/todolist.png"
+                alt="To-do-app med vanilla javascript"
+              />
+            </div>
+            <p>
+              Min första to-do-app. Skrevs i vanilla JavaScript med Vite och
+              brukar localstorage - jag använder den fortfarande för att hålla
+              ordning på grejer.
+            </p>
+            <div className="link-container">
+              <a href="https://github.com/hjortie/to_do_list">Länk till repo</a>
+              <a href="https://hjortie.github.io/to_do_list/">
+                Kolla live här!
+              </a>
+            </div>
+          </div>
+          <div className="project-container">
+            <div className="img-container">
+              <img src="../images/webshop.png" alt="Grupparbete webbshop" />
+            </div>
+            <p>
+              En webbshop som byggdes under grupparbete. Dynamisk varukorg där
+              innehållet uppdateras live. Vanilla TypeScript hela vägen!
+            </p>
+            <div className="link-container">
+              <a href="https://github.com/hjortie/group_project_webshop/">
+                Länk till repo
+              </a>
+            </div>
+          </div>
+          <div className="project-container">
+            <div className="img-container">
+              <img
+                src="../images/konst-i-konsten.png"
+                alt="Sidoprojekt konst i konsten"
+              />
+            </div>
+            <p>
+              Ett väldigt tidigt sidoprojekt jag petade med för att träna på
+              HTML och CSS.
+            </p>
+            {/* <!-- <div className="link-container">
+            <a href="http://github.com/hjortie/">Länk till repo</a>
+            <a href="https://hjortie.github.io/to_do_list/">Kolla live här!</a>
+          </div> --> */}
+          </div>
+          <div className="project-container">
+            <div className="img-container">
+              <img
+                src="../images/elin-tanker.png"
+                alt="Övningsprojekt flexbox"
+              />
+            </div>
+            <p>Även detta ett tidigt övningsprojekt - här tränades flexbox!</p>
+            {/* <!-- <div className="link-container">
+            <a href="http://github.com/hjortie/">Länk till repo</a>
+            <a href="https://hjortie.github.io/to_do_list/">Kolla live här!</a>
+          </div> --> */}
+          </div>
+          <div className="project-container">
+            <div className="img-container">
+              <img
+                src="../images/API-omdb.png"
+                alt="Omdb-API - fetch-projekt"
+              />
+            </div>
+            <p>
+              Jag har tränat mycket på att hämta data från API:er och rendera
+              HTML baserat på datan - här med hjälp av OmDB:s API.
+            </p>
+            {/* <!-- <div class="link-container">
+            <a href="http://github.com/hjortie/">Länk till repo</a>
+            <a href="https://hjortie.github.io/to_do_list/">Kolla live här!</a>
+          </div> --> */}
+          </div>
+        </section>
+        <article className="page-text">
+          <span>
+            Ett litet urval av skolarbeten och små sidoprojekt jag pysslat med
+            de senaste månaderna. Jag har jobbat mycket med TypeScript, både
+            backend (API-utveckling) och frontend (dynamisk rendering).
+          </span>
+        </article>
+      </div>
+    </>
+  );
+};

@@ -1,0 +1,50 @@
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.grass-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(46, 96, 46);
+
+  .flower {
+    width: 10vw;
+    position: absolute;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .flower:hover {
+    animation: spin 500ms ease-in-out;
+  }
+
+  h1 {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 1rem;
+    color: #f2f2f2;
+    text-decoration: underline dotted 15px #e5a6bc;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .grass-container {
+    background-color: rgb(132, 175, 132);
+  }
+}
+
+@media (min-width: 480px) {
+  .grass-container {
+    margin-left: 20vw;
+    width: 80vw;
+
+    h1 {
+      margin: 0;
+      font-size: 5rem;
+      text-align: center;
+      display: block;
+    }
+  }
+}

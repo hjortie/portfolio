@@ -1,0 +1,52 @@
+:root {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #f9f9f9;
+
+  color-scheme: light dark;
+  background-color: #393939;
+}
+
+a:hover {
+  text-decoration: underline dotted;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 3em;
+}
+
+/*dark mode-adjustments*/
+.page-text,
+.contact-description-container {
+  background-color: #242424;
+  color: #f9f9f9;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  .page-text,
+  .contact-description-container {
+    color: #213547;
+    background-color: #dac0ad;
+  }
+
+  a:hover {
+    color: #f9f9f9;
+  }
+}
+
+@media (min-width: 480px) {
+  body {
+    overflow: hidden;
+  }
+}
