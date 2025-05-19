@@ -14,7 +14,7 @@ export const Layout = () => {
         <nav className="burger">
           <div id="logo-container">
             <Link to="/">
-              <img src="logo.png" alt="Elin Hjortskull" />
+              <img src="/logo.png" alt="Elin Hjortskull" />
             </Link>
           </div>
         </nav>
@@ -54,7 +54,7 @@ export const Layout = () => {
         <nav className="wide-nav">
           <div id="logo-container">
             <Link to="/">
-              <img src="logo.png" alt="Elin Hjortskull" />
+              <img src="/logo.png" alt="Elin Hjortskull" />
             </Link>
           </div>
           <p>
