@@ -1,5 +1,6 @@
 import { Link, NavLink, Outlet } from "react-router";
 import "./layout.css";
+import blum from "../../assets/BLUM.svg";
 import { useState } from "react";
 
 export const Layout = () => {
@@ -14,7 +15,7 @@ export const Layout = () => {
         <nav className="burger">
           <div id="logo-container">
             <Link to="/">
-              <img src="/logo.png" alt="Elin Hjortskull" />
+              <img src={blum} alt="Elin Hjortskull" />
             </Link>
           </div>
         </nav>
@@ -54,7 +55,7 @@ export const Layout = () => {
         <nav className="wide-nav">
           <div id="logo-container">
             <Link to="/">
-              <img src="/logo.png" alt="Elin Hjortskull" />
+              <img src={blum} alt="Elin Hjortskull" />
             </Link>
           </div>
           <p>

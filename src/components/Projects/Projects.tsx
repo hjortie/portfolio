@@ -1,4 +1,11 @@
 import "./projects.css";
+import theLastTodo from "../../assets/images/the-last-todo.png";
+import drinkApp from "../../assets/images/drink-app.png";
+import todoList from "../../assets/images/todolist.png";
+import webshop from "../../assets/images/webshop.png";
+import konstIKonsten from "../../assets/images/konst-i-konsten.png";
+import elinTanker from "../../assets/images/elin-tanker.png";
+import apiOmdb from "../../assets/images/API-omdb.png";
 
 export const Projects = () => {
   return (
@@ -7,7 +14,7 @@ export const Projects = () => {
         <section className="content-container">
           <div className="project-container">
             <div className="img-container">
-              <img src="images/the-last-todo.png" alt="To-do-app med React" />
+              <img src={theLastTodo} alt="To-do-app med React" />
             </div>
             <p>
               Mitt första React-projekt med Vite - den senaste tolkningen av
@@ -25,10 +32,7 @@ export const Projects = () => {
 
           <div className="project-container">
             <div className="img-container">
-              <img
-                src="images/drink-app.png"
-                alt="API för crud-operationer mot databas"
-              />
+              <img src={drinkApp} alt="API för crud-operationer mot databas" />
             </div>
             <p>
               Ett crud-API byggt med Express och MongoDB. Drinkrecept kan läggas
@@ -41,10 +45,7 @@ export const Projects = () => {
           </div>
           <div className="project-container">
             <div className="img-container">
-              <img
-                src="images/todolist.png"
-                alt="To-do-app med vanilla javascript"
-              />
+              <img src={todoList} alt="To-do-app med vanilla javascript" />
             </div>
             <p>
               Min första to-do-app. Skrevs i vanilla JavaScript med Vite och
@@ -60,7 +61,7 @@ export const Projects = () => {
           </div>
           <div className="project-container">
             <div className="img-container">
-              <img src="images/webshop.png" alt="Grupparbete webbshop" />
+              <img src={webshop} alt="Grupparbete webbshop" />
             </div>
             <p>
               En webbshop som byggdes under grupparbete. Dynamisk varukorg där
@@ -74,10 +75,7 @@ export const Projects = () => {
           </div>
           <div className="project-container">
             <div className="img-container">
-              <img
-                src="./images/konst-i-konsten.png"
-                alt="Sidoprojekt konst i konsten"
-              />
+              <img src={konstIKonsten} alt="Sidoprojekt konst i konsten" />
             </div>
             <p>
               Ett väldigt tidigt sidoprojekt jag petade med för att träna på
@@ -90,7 +88,7 @@ export const Projects = () => {
           </div>
           <div className="project-container">
             <div className="img-container">
-              <img src="images/elin-tanker.png" alt="Övningsprojekt flexbox" />
+              <img src={elinTanker} alt="Övningsprojekt flexbox" />
             </div>
             <p>Även detta ett tidigt övningsprojekt - här tränades flexbox!</p>
             {/* <!-- <div className="link-container">
@@ -100,7 +98,7 @@ export const Projects = () => {
           </div>
           <div className="project-container">
             <div className="img-container">
-              <img src="images/API-omdb.png" alt="Omdb-API - fetch-projekt" />
+              <img src={apiOmdb} alt="Omdb-API - fetch-projekt" />
             </div>
             <p>
               Jag har tränat mycket på att hämta data från API:er och rendera
