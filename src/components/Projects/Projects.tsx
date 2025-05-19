@@ -75,7 +75,7 @@ export const Projects = () => {
           <div className="project-container">
             <div className="img-container">
               <img
-                src="images/konst-i-konsten.png"
+                src="./images/konst-i-konsten.png"
                 alt="Sidoprojekt konst i konsten"
               />
             </div>
