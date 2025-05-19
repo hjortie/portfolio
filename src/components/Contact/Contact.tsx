@@ -1,10 +1,11 @@
 import "./contact.css";
+import myPicture from "../../assets/images/me.jpeg";
 
 export const Contact = () => {
   return (
     <section id="contact-container">
       <div id="author-picture">
-        <img src="../images/me.jpeg" alt="" />
+        <img src={myPicture} alt="" />
       </div>
       <div className="contact-description-container">
         <article className="contact-description">
