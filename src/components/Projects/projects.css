@@ -22,6 +22,7 @@
   overflow-x: scroll;
   padding: 1rem;
   gap: 2rem;
+  scrollbar-gutter: stable;
 
   .img-container {
     max-width: 95vw;
