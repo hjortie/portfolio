@@ -26,7 +26,7 @@ export const Home = () => {
   return (
     <>
       <section id="grass" className="grass-container" onClick={handleClick}>
-        <h1>Go on, touch the grass</h1>
+        <h1>Go on, touch the grass*</h1>
         {flowers.map((f) => (
           <img
             key={f.id}
@@ -38,6 +38,11 @@ export const Home = () => {
             }}
           />
         ))}
+        <span>
+          *För oss som är kroniskt online är "touch grass" ett uttryck för att
+          logga ut - det här är bara en kort virtuell utloggning, en liten
+          mikropaus om man behöver den.
+        </span>
       </section>
     </>
   );

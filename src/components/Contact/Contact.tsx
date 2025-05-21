@@ -12,8 +12,8 @@ export const Contact = () => {
           <h1>Om mig, Elin</h1>
           <span>
             Du har alltså hittat till min portfolio? Välkommen, kul att ha dig
-            här! Passa på att ta en paus, leka lite i gräset och ta en kopp
-            kaffe om du vill.
+            här! Passa på att ta en paus, leka lite i gräset, lukta på blommorna
+            och ta en kopp kaffe om du vill.
             <br />
             <br />
             Jag är en trettioåring i jakt på min nästa karriärsmöjlighet inom
