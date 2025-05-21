@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <section id="contact-container">
       <div id="author-picture">
-        <img src={myPicture} alt="" />
+        <img src={myPicture} alt="En bild på mig" />
       </div>
       <div className="contact-description-container">
         <article className="contact-description">
