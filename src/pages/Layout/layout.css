@@ -8,11 +8,11 @@ a {
 }
 
 a:hover {
-  text-decoration: underline 2px dotted;
+  text-decoration: underline dotted 2px;
 }
 
 .active {
-  text-decoration: underline 2px #ea7ba2;
+  text-decoration: underline solid 3px #ea7ba2;
 }
 
 .burger {
