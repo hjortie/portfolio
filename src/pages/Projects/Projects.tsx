@@ -1,5 +1,6 @@
 import "./projects.css";
 import theLastTodo from "../../assets/images/the-last-todo.png";
+import reactWebshop from "../../assets/images/react-webshop.jpg";
 import drinkApp from "../../assets/images/drink-app.png";
 import todoList from "../../assets/images/todolist.png";
 import webshop from "../../assets/images/webshop.png";
@@ -16,6 +17,13 @@ export const Projects = () => {
         "Mitt första React-projekt med Vite - den senaste tolkningen av många to-do-appar. Använde även TypeScript och Tailwind CSS.",
       repo: "https://github.com/hjortie/the-last-todo/",
       live: "https://hjortie.github.io/the-last-todo/",
+    },
+    {
+      name: "Webshop med React",
+      img: reactWebshop,
+      description:
+        "Ett React-projekt som använder context, react-router och reducers.",
+      repo: "https://github.com/hjortie/react-webshop",
     },
     {
       name: "API för crud-operationer mot databas",
