@@ -1,4 +1,5 @@
 import "./projects.css";
+import pettingZoo from "../../assets/images/petting-zoo.jpg";
 import theLastTodo from "../../assets/images/the-last-todo.png";
 import reactWebshop from "../../assets/images/react-webshop.jpg";
 import drinkApp from "../../assets/images/drink-app.png";
@@ -10,6 +11,14 @@ import type { Project } from "../../models/Project";
 
 export const Projects = () => {
   const projects: Project[] = [
+    {
+      name: "React-baserad zoo-app",
+      img: pettingZoo,
+      description:
+        "Ett skolprojekt gjort i React med Vite, Typescript och SCSS. Experimenterar med context, reducer, states och egna hooks.",
+      repo: "https://github.com/hjortie/petting-zoo/",
+      live: "https://hjortie.github.io/petting-zoo/",
+    },
     {
       name: "To-do-app med React",
       img: theLastTodo,
