@@ -4,41 +4,62 @@ import "./skills.css";
 
 export const Skills = () => {
   const tools: Tool[] = [
-    { name: "Vite", logo: "vite.svg", link: "https://vite.dev/" },
-    { name: "React", logo: "react.svg", link: "https://react.dev/" },
-    {
-      name: "Javascript",
-      logo: "javascript-svgrepo-com.svg",
-      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    },
-    {
-      name: "Typescript",
-      logo: "typescript.svg",
-      link: "https://www.typescriptlang.org/",
-    },
-    {
-      name: "Tailwind CSS",
-      logo: "tailwind.svg",
-      link: "https://tailwindcss.com/",
-    },
-    { name: "MongoDB", logo: "mongodb.svg", link: "https://www.mongodb.com/" },
+		{ name: "Vite", logo: "vite.svg", link: "https://vite.dev/" },
+		{ name: "React", logo: "react.svg", link: "https://react.dev/" },
+		{
+			name: "Javascript",
+			logo: "javascript-svgrepo-com.svg",
+			link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+		},
+		{
+			name: "Typescript",
+			logo: "typescript.svg",
+			link: "https://www.typescriptlang.org/",
+		},
+		{
+			name: "Tailwind CSS",
+			logo: "tailwind.svg",
+			link: "https://tailwindcss.com/",
+		},
+		{
+			name: "Express.js",
+			logo: "express-svgrepo-com.svg",
+			link: "https://expressjs.com/",
+		},
+		{
+			name: "Wordpress",
+			logo: "wordpress-color-svgrepo-com.svg",
+			link: "https://wordpress.com/",
+		},
+		{ name: "PHP", logo: "php-svgrepo-com.svg", link: "https://www.php.net/" },
+		{
+			name: "Laravel Blade",
+			logo: "laravel-svgrepo-com.svg",
+			link: "https://laravel.com/docs/10.x/blade",
+		},
+		{
+			name: "Bootstrap",
+			logo: "bootstrap-svgrepo-com.svg",
+			link: "https://getbootstrap.com/",
+		},
+		{ name: "MongoDB", logo: "mongodb.svg", link: "https://www.mongodb.com/" },
 
-    {
-      name: "Postman",
-      logo: "postman-icon-svgrepo-com.svg",
-      link: "https://www.postman.com/",
-    },
-    {
-      name: "Figma",
-      logo: "figma-svgrepo-com.svg",
-      link: "https://www.figma.com/",
-    },
-    {
-      name: "SCSS",
-      logo: "scss2-svgrepo-com.svg",
-      link: "https://sass-lang.com/",
-    },
-  ];
+		{
+			name: "Postman",
+			logo: "postman-icon-svgrepo-com.svg",
+			link: "https://www.postman.com/",
+		},
+		{
+			name: "Figma",
+			logo: "figma-svgrepo-com.svg",
+			link: "https://www.figma.com/",
+		},
+		{
+			name: "SCSS",
+			logo: "scss2-svgrepo-com.svg",
+			link: "https://sass-lang.com/",
+		},
+	];
 
   return (
     <>
