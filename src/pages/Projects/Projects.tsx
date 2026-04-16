@@ -7,67 +7,75 @@ import todoList from "../../assets/images/todolist.png";
 import webshop from "../../assets/images/webshop.png";
 import elinTanker from "../../assets/images/elin-tanker.png";
 import apiOmdb from "../../assets/images/API-omdb.png";
+import reRead from "../../assets/images/re-read.jpg";
 import type { Project } from "../../models/Project";
 
 export const Projects = () => {
   const projects: Project[] = [
-    {
-      name: "React-baserad zoo-app",
-      img: pettingZoo,
-      description:
-        "Ett skolprojekt gjort i React med Vite, Typescript och SCSS. Experimenterar med context, reducer, states och egna hooks.",
-      repo: "https://github.com/hjortie/petting-zoo/",
-      live: "https://hjortie.github.io/petting-zoo/",
-    },
-    {
-      name: "To-do-app med React",
-      img: theLastTodo,
-      description:
-        "Mitt första React-projekt med Vite - den senaste tolkningen av många to-do-appar. Använde även TypeScript och Tailwind CSS.",
-      repo: "https://github.com/hjortie/the-last-todo/",
-      live: "https://hjortie.github.io/the-last-todo/",
-    },
-    {
-      name: "Webshop med React",
-      img: reactWebshop,
-      description:
-        "Ett React-projekt som använder context, react-router och reducers.",
-      repo: "https://github.com/hjortie/react-webshop",
-    },
-    {
-      name: "API för crud-operationer mot databas",
-      img: drinkApp,
-      description:
-        "Ett crud-API byggt med Express och MongoDB. Drinkrecept kan läggas till, redigeras och tas bort direkt från frontend. Filtrering och sortering av drinkrecepten sker på serversidan.",
-      repo: "https://github.com/hjortie/crud-api",
-    },
-    {
-      name: "To-do-app med vanilla javascript",
-      img: todoList,
-      description:
-        "Min första to-do-app. Skrevs i vanilla JavaScript med Vite och brukar localstorage - jag använder den fortfarande för att hålla ordning på grejer.",
-      repo: "https://github.com/hjortie/to_do_list",
-      live: "https://hjortie.github.io/to_do_list/",
-    },
-    {
-      name: "Grupparbete webbshop",
-      img: webshop,
-      description:
-        "En webbshop som byggdes under grupparbete. Dynamisk varukorg där innehållet uppdateras live. Vanilla TypeScript hela vägen!",
-      repo: "https://github.com/hjortie/group_project_webshop/",
-    },
-    {
-      name: "Övningsprojekt flexbox",
-      img: elinTanker,
-      description: "Ett tidigt övningsprojekt - här tränades flexbox!",
-    },
-    {
-      name: "Omdb-API - fetch-projekt",
-      img: apiOmdb,
-      description:
-        "Jag har tränat mycket på att hämta data från API:er och rendera HTML baserat på datan - här med hjälp av OmDB:s API.",
-    },
-  ];
+		{
+			name: "Examensarbete - ReRead",
+			img: reRead,
+			description:
+				"Mitt examensarbete där jag utvecklade en app för att hjälpa människor att läsa mer. Appen är byggd i React och har backend i Express och MongoDB. Autentisering, CRUD-operationer, React-koncept som context och reducer, och en massa annat kul!",
+			repo: "https://github.com/hjortie/reread",
+			live: "",
+		},
+		{
+			name: "React-baserad zoo-app",
+			img: pettingZoo,
+			description:
+				"Ett skolprojekt gjort i React med Vite, Typescript och SCSS. Experimenterar med context, reducer, states och egna hooks.",
+			repo: "https://github.com/hjortie/petting-zoo/",
+		},
+		{
+			name: "To-do-app med React",
+			img: theLastTodo,
+			description:
+				"Mitt första React-projekt med Vite - den senaste tolkningen av många to-do-appar. Använde även TypeScript och Tailwind CSS.",
+			repo: "https://github.com/hjortie/the-last-todo/",
+			live: "https://hjortie.github.io/the-last-todo/",
+		},
+		{
+			name: "Webshop med React",
+			img: reactWebshop,
+			description:
+				"Ett React-projekt som använder context, react-router och reducers.",
+			repo: "https://github.com/hjortie/react-webshop",
+		},
+		{
+			name: "API för crud-operationer mot databas",
+			img: drinkApp,
+			description:
+				"Ett crud-API byggt med Express och MongoDB. Drinkrecept kan läggas till, redigeras och tas bort direkt från frontend. Filtrering och sortering av drinkrecepten sker på serversidan.",
+			repo: "https://github.com/hjortie/crud-api",
+		},
+		{
+			name: "To-do-app med vanilla javascript",
+			img: todoList,
+			description:
+				"Min första to-do-app. Skrevs i vanilla JavaScript med Vite och brukar localstorage - jag använder den fortfarande för att hålla ordning på grejer.",
+			repo: "https://github.com/hjortie/to_do_list",
+			live: "https://hjortie.github.io/to_do_list/",
+		},
+		{
+			name: "Grupparbete webbshop",
+			img: webshop,
+			description:
+				"En webbshop som byggdes under grupparbete. Dynamisk varukorg där innehållet uppdateras live. Vanilla TypeScript hela vägen!",
+			repo: "https://github.com/hjortie/group_project_webshop/",
+		},
+		{
+			name: "Övningsprojekt flexbox",
+			img: elinTanker,
+			description: "Ett tidigt övningsprojekt - här tränades flexbox!",
+		},
+		{
+			name: "Omdb-API - fetch-projekt",
+			img: apiOmdb,
+			description:
+				"Jag har tränat mycket på att hämta data från API:er och rendera HTML baserat på datan - här med hjälp av OmDB:s API.",
+		},
+	];
   return (
     <>
       <div className="content-wrapper">
